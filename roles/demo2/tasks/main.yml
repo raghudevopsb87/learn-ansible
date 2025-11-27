@@ -24,4 +24,11 @@
     name: demo
     tasks_from: hello
 
+- name: Import a role dynamically
+  ansible.builtin.include_role:
+    name: demo
 
+- name: Import a role dynamically but another task file
+  ansible.builtin.include_role:
+    name: demo
+    tasks_from: hello
