@@ -9,3 +9,18 @@
     sname: Rahul
 
 
+- name: Load a tasks file dynamically
+  ansible.builtin.include_tasks: "{{ filename }}.yml"
+  vars:
+    filename: greeting
+
+- name: Import a role statically
+  ansible.builtin.import_role:
+    name: demo
+
+- name: Import a role statically but another task file
+  ansible.builtin.import_role:
+    name: demo
+    tasks_from: hello
+
+
