@@ -1,3 +1,5 @@
-Hello {{ sname }},
+Hello {{ student.name }},
   Welcome to DevOps Training.
+  Your registered age is {{ student.age }}
+
 
