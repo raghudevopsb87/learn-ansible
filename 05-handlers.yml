@@ -6,7 +6,6 @@
       ansible.builtin.shell: uptime
 
     - name: Sample task that is ok
-      ansible.builtin.file:
-        path: /tmp/test
-        state: touch
-
+      ansible.builtin.copy:
+        content: '# This file was moved to /etc/other.conf'
+        dest: /tmp/test
