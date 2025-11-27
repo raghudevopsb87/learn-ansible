@@ -1,0 +1,12 @@
+- name: Handlers
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Sample task that can be changed
+      ansible.builtin.shell: uptime
+
+    - name: Sample task that is ok
+      ansible.builtin.file:
+        path: /tmp/test
+
+
