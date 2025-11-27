@@ -1,0 +1,3 @@
+Hello {{ sname }},
+  Welcome to DevOps Training.
+
