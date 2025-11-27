@@ -5,7 +5,7 @@
     sname: Raju
   tasks:
     - name: Copy
-      ansible.builtin.file:
+      ansible.builtin.copy:
         src: test.txt
         dest: /tmp/file-copied.txt
 
