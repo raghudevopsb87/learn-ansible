@@ -8,5 +8,9 @@ Hello {{ student.name }},
 
   Your registered age is {{ student.age }}
 
+{% for topic in topics %}
+  Topic Name in Training - {{ topic }}
+{% endfor %}
+
 
 

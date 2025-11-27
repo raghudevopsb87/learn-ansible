@@ -2,6 +2,10 @@
   hosts: localhost
   connection: local
   vars:
+    topics:
+      - Linux
+      - Shell
+      - Ansible
     student:
       name: Raju
       age: 10
