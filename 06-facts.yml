@@ -4,7 +4,7 @@
   tasks:
     - name: Print Fact
       ansible.builtin.debug:
-        msg: "{{ ansible_facts['ansible_default_ipv4']['address'] }}"
+        msg: "{{ ansible_facts.ansible_default_ipv4.address. }}"
 
 
 
