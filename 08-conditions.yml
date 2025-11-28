@@ -4,7 +4,7 @@
   vars:
     x: 100
     my_boolean1: true
-    my_boolean1: false
+    my_boolean2: false
   tasks:
     - name: Conditions
       ansible.builtin.debug:
