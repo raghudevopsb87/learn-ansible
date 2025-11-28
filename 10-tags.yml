@@ -1,0 +1,28 @@
+- name: Loops Demo
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Blue Task 1
+      debug:
+        msg: Blue Task 1
+
+    - name: Green Task 1
+      debug:
+        msg: Green Task 1
+
+    - name: Red Task 1
+      debug:
+        msg: Red Task 1
+
+    - name: Blue Task 2
+      debug:
+        msg: Blue Task 2
+
+    - name: Green Task 2
+      debug:
+        msg: Green Task 2
+
+    - name: Red Task 2
+      debug:
+        msg: Red Task 2
+
