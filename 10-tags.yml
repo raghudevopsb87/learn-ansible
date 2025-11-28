@@ -67,3 +67,11 @@
       tags: red
       debug:
         msg: Red Task 2
+
+    - name: Red Task 2
+      tags:
+        - red
+        - green
+        - blue
+      debug:
+        msg: Red Task 2
