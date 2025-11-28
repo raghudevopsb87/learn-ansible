@@ -1,4 +1,4 @@
-- name: Loops tags but with conditions
+- name: With conditions
   hosts: localhost
   connection: local
   tasks:
@@ -32,3 +32,38 @@
       debug:
         msg: Red Task 2
 
+# Conditions will fail if we need to run for two colors.
+
+- name: Tags
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Blue Task 1
+      tags: blue
+      debug:
+        msg: Blue Task 1
+
+    - name: Green Task 1
+      tags: green
+      debug:
+        msg: Green Task 1
+
+    - name: Red Task 1
+      tags: red
+      debug:
+        msg: Red Task 1
+
+    - name: Blue Task 2
+      tags: blue
+      debug:
+        msg: Blue Task 2
+
+    - name: Green Task 2
+      tags: green
+      debug:
+        msg: Green Task 2
+
+    - name: Red Task 2
+      tags: red
+      debug:
+        msg: Red Task 2
