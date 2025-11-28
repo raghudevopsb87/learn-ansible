@@ -15,3 +15,10 @@
         msg: "{{ my_password }}"
 
 
+# ansible-vault encrypt_string "Abcd@123"
+# ansible-playbook 11-vault.yml
+# ansible-playbook 11-vault.yml --ask-vault-password
+## Store the password in file and use it
+# vi pass
+# ansible-playbook 11-vault.yml --vault-password-file=pass
+
