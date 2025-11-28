@@ -1,28 +1,34 @@
-- name: Loops Demo
+- name: Loops tags but with conditions
   hosts: localhost
   connection: local
   tasks:
     - name: Blue Task 1
+      when: color == "blue"
       debug:
         msg: Blue Task 1
 
     - name: Green Task 1
+      when: color == "green"
       debug:
         msg: Green Task 1
 
     - name: Red Task 1
+      when: color == "red"
       debug:
         msg: Red Task 1
 
     - name: Blue Task 2
+      when: color == "blue"
       debug:
         msg: Blue Task 2
 
     - name: Green Task 2
+      when: color == "green"
       debug:
         msg: Green Task 2
 
     - name: Red Task 2
+      when: color == "red"
       debug:
         msg: Red Task 2
 
